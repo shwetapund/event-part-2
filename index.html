@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
     <script>
+        function showData()
+        {
+            let userName = document.getElementById("fullname").value;
 
+            document.querySelector("h2").innerHTML = "hello, "+userName;
+        }
     </script>
         
     <body>
         <input type="text" 
-        onkeyPress="console.log('key press')"
-        onkeydown="console.log('key down')"
-           placeholder="enter Fullname" />
+      
+        placeholder="enter Fullname" 
+        
+        id="fullname"
 
+        onkeyup="showData()"/>
+
+        <br/><br/>
+
+       
+        
+          
+           <br/>
+
+           <h2></h2>
+
+        
     </body>
 </html>
